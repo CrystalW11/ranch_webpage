@@ -21,8 +21,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-          {/* Set the favicon */}
-          <link rel="icon" href="/kristens1_logo.png" type="image/png" />
+        {/* Set the favicon */}
+        <link rel="icon" href="/kristens1_logo.png" type="image/png" />
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

@@ -6,7 +6,7 @@ export default function Home() {
       {/* Logo at top */}
       <div className="block mb-8">
 
-        <img 
+        <Image
         src="/kristens1_logo.png" 
         alt="Brand Logo"
         width={150}
