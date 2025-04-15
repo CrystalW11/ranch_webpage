@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        {/* Set the favicon */}
+        {/* Set the favicon to your custom logo */}
         <link rel="icon" href="/kristens1_logo.png" type="image/png" />
       </Head>
       <body
