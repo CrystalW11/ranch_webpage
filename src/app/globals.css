@@ -35,3 +35,75 @@ body {
   margin: 0;
   padding: 0;
 } */
+
+/* Nav container */
+.nav {
+  background: #f8f8f8;
+  padding: 1rem;
+}
+
+/* Header row with logo + hamburger */
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hamburger button (hidden on desktop) */
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  display: none; /* show only on mobile */
+}
+
+/* Nav links container */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Nav link style */
+.nav-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-link:hover {
+  color: #0070f3;
+}
+
+/* 📱 Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
+
+ /*Logo Section*/
+.logo-img {
+  height: 80px;   /* Default size */
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 36px; /* Smaller for mobile */
+  }
+}
+

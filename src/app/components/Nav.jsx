@@ -1,22 +1,27 @@
-// src/app/components/Nav.jsx
 import Link from "next/link";
+import Image from "next/image";
+import logo from "/public/images/rtr-ranch_logo-final_reverse.png"; // Optional if using next/image
 
 export default function Nav() {
   return (
-    <nav style={{ padding: "1rem", background: "#eee", display: "flex", alignItems: "center" }}>
-      {/* Logo */}
-      <div style={{ marginRight: "2rem" }}>
-        <Link href="/">
-          <img src="/kristens1_logo.png" alt="Kristen's Logo" style={{ height: "40px" }} />
-        </Link>
-      </div>
-      
+    <nav className="nav">
+      {/* Logo - link to the actual image file */}
+      <Link href="/logo">
+        <img
+          src="/images/rtr-ranch_logo-final_reverse.png"
+          alt="RTR Ranch Logo"
+          className="logo-img"
+        />
+      </Link>
+
       {/* Navigation Links */}
-      <Link href="/" style={{ marginRight: "1rem" }}>Home</Link>
-      <Link href="/about" style={{ marginRight: "1rem" }}>About</Link>
-      <Link href="/reservation" style={{ marginRight: "1rem" }}>Reservation</Link>
-      <Link href="/services" style={{ marginRight: "1rem" }}>Services</Link>
-      <Link href="/contact">Contact</Link>
+      <div className="nav-links">
+        <Link href="/">Home</Link>
+        <Link href="/about">About</Link>
+        <Link href="/reservation">Reservation</Link>
+        <Link href="/services">Services</Link>
+        <Link href="/contact">Contact</Link>
+      </div>
     </nav>
   );
 }
