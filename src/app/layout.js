@@ -1,6 +1,6 @@
 // src/app/layout.js
 import { Geist, Geist_Mono } from "next/font/google";
-import Head from "next/head"; // Controls HTML <head>
+
 import Nav from "./components/Nav"; // Navigation bar
 import "./globals.css"; // Global styles
 
@@ -24,10 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <Head>
-        <link rel="icon" href="/images/rtr-ranch_logo-final_reverse.png" type="image/x-icon" />
-        <title>Ranch Webpage</title>
-      </Head>
+
       <body className="antialiased">
         <div className="page-container">
           <Nav />
